@@ -27,7 +27,7 @@ export class MyApp {
       this.splashScreen.hide();
       //animate();
 
-      timer(0).subscribe(() =>{
+      timer(4000).subscribe(() =>{
          this.showSplash = false;
       })
 

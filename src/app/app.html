@@ -1,2 +1,11 @@
-<canvas *ngIf="showSplash" class="splash fireworks"></canvas>
+<div *ngIf="showSplash" class="view">
+  <div class="plane main">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</div>
 <ion-nav *ngIf="!showSplash" [root]="rootPage"></ion-nav>
