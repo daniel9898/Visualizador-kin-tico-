@@ -1,0 +1,26 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Imágenes <ion-icon name="aperture"></ion-icon></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="card-background-page">
+
+  <ion-slides class="image-slider" loop="true" slidesPerView="1">
+    <ion-slide *ngFor="let pic of pictureList">
+      <ion-card >
+        <img src="{{ pic.url }}" imageViewer/>
+        <div class="card-title">{{ pic.usrName }}</div>
+        <div class="card-subtitle">{{ pic.fecha }}</div>
+        <p class="card-subtitle">
+          Valoración : {{ pic.tipo }}
+        </p>
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

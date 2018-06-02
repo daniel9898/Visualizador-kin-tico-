@@ -1,14 +1,20 @@
+
 <ion-header>
+
   <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
+    <ion-title>Toma una Foto <ion-icon name="aperture"></ion-icon></ion-title>
   </ion-navbar>
+
 </ion-header>
 
+
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+  <div class="buttons">
+    <a class="btn blue" (click)="tomarImagen('positiva')">Captura lo Bueno <ion-icon name="ios-thumbs-up">
+    </ion-icon></a>
+    <a class="btn green" (click)="tomarImagen('negativa')">Captura lo Malo <ion-icon name="ios-thumbs-down">
+    </ion-icon></a>
+  </div>
+
 </ion-content>

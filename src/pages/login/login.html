@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Iniciar Sesión </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Contraseña</ion-label>
+      <ion-input type="PassWord" [(ngModel)]="clave"></ion-input>
+    </ion-item>
+    <button ion-button block (click)="login()">Ingresar</button>
+
+  <div padding-top>
+    <button ion-button block (click)="setTestLogin('admin@gmail.com','000011')">ADMIN</button>
+    <button ion-button block color="secondary" (click)="setTestLogin('invitado@gmail.com','000022')">INVITADO
+    </button>
+    <button ion-button block color="light" (click)="setTestLogin('usuario@gmail.com','000033')">
+    USUARIO</button>
+    <button ion-button block color="dark" (click)="setTestLogin('anonimo@gmail.com','000044')">
+    ANONIMO</button>
+    <button ion-button block color="danger" (click)="setTestLogin('tester@gmail.com','000055')">
+    TESTER</button>
+  </div>
+</ion-content>
